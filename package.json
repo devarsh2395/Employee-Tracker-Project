@@ -1,0 +1,17 @@
+{
+  "name": "employee-tracker-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+
+  "dependencies": {
+    "console-table-printer": "^2.11.1",
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.1.2"
+  }
+}
