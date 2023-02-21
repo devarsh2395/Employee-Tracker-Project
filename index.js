@@ -162,13 +162,9 @@ function addEmployee() {
         },
         {
           type: "list",
-          name: "roleId",
-          message: "what is the role of the employee?",
+          name: "role_id",
+          message: "What is the role of the employee?",
           choices: roleChoices,
-        },
-        {
-          name: "salary",
-          message: "What is the salary of the employee?",
         },
       ])
       .then((employee) => {
@@ -179,6 +175,3 @@ function addEmployee() {
       });
   });
 }
-
-
-

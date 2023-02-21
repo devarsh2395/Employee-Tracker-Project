@@ -64,7 +64,6 @@ Below is the link to the walkthrough video which will demonstrates the functiona
 ## Technologies Used
 
 - Node
-- ExpressJS
 - MYSQL
 - JAVASCRIPT
 
