@@ -3,7 +3,7 @@
 
 ## Description
 
-
+This command-line application allows users to interact with a MySQL database. Users can view and add departments, roles, and employees, and update employee roles. The application displays formatted tables of department names and ids, job titles, role ids, departments, and salaries, and employee data including ids, names, job titles, departments, salaries, and managers. Adding a department requires entering the name, adding a role requires entering the name, salary, and department, and adding an employee requires entering the first and last names, role, and manager. To update an employee's role, the user selects the employee and enters the new role.
 
 ## User Story
 
