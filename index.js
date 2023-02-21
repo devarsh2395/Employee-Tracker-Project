@@ -1,4 +1,7 @@
+// Importing the inquirer package
 const inquirer = require('inquirer');
+
+// Importing the queries module
 const queries = require('./db/queries');
 
 init();
@@ -59,7 +62,7 @@ function start() {
     })
 }
 
-
+// view department function
 function viewDepartments(){
   queries.findAllDepartments()
     .then(([rows]) => {
@@ -69,7 +72,7 @@ function viewDepartments(){
     .then(()=> start())
 }
 
-
+// view roles function
 function viewRoles(){
   queries.findAllRoles()
     .then(([rows]) => {
@@ -79,7 +82,7 @@ function viewRoles(){
     .then(()=> start())
 }
 
-
+// view employees function
 function viewEmployees(){
   queries.findAllEmployees()
     .then(([rows]) => {
@@ -89,7 +92,7 @@ function viewEmployees(){
     .then(()=> start())
 }
 
-
+// add department function
 function addDepartment() {
   inquirer
     .prompt([
@@ -107,7 +110,7 @@ function addDepartment() {
     });
 }
 
-
+// add role function
 function addRole(){
   queries.findAllDepartments()
   .then(([rows])=> {
@@ -141,7 +144,7 @@ function addRole(){
 
 }
 
-
+// add employee function
 function addEmployee() {
   queries.findAllRoles().then(([rows]) => {
     let roles = rows;

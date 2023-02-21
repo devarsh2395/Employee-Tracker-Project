@@ -1,13 +1,21 @@
+-- Dropes the database if exists
 DROP DATABASE IF EXISTS employee_db;
+
+-- creates the database
 CREATE DATABASE employee_db;
 
+-- use the employee_db database
 USE employee_db;
 
+
+-- creates the table named department within the employee_db database
 CREATE TABLE department (
   id INT PRIMARY KEY AUTO_INCREMENT,
   name VARCHAR(30) NOT NULL
 );
 
+
+-- creates the table named role within the employee_db database
 CREATE TABLE role (
   id INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(30) NOT NULL,
@@ -17,6 +25,8 @@ CREATE TABLE role (
   REFERENCES department (id)
 );
 
+
+-- creates the table named employee within the employee_db database
 CREATE TABLE employee (
   id INT PRIMARY KEY AUTO_INCREMENT,
   first_name VARCHAR(30) NOT NULL,
